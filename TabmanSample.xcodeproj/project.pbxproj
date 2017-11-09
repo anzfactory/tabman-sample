@@ -7,16 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B2255261FB4386600F9BCB7 /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2255251FB4386600F9BCB7 /* ChildViewController.swift */; };
 		2B3AAEAE1FB43616009977F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3AAEAD1FB43616009977F4 /* AppDelegate.swift */; };
 		2B3AAEB01FB43616009977F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3AAEAF1FB43616009977F4 /* ViewController.swift */; };
 		2B3AAEB31FB43616009977F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B3AAEB11FB43616009977F4 /* Main.storyboard */; };
 		2B3AAEB51FB43616009977F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B3AAEB41FB43616009977F4 /* Assets.xcassets */; };
 		2B3AAEB81FB43616009977F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B3AAEB61FB43616009977F4 /* LaunchScreen.storyboard */; };
+		2B76A24E1FB4491C00D9861F /* GrandChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B76A24D1FB4491C00D9861F /* GrandChildViewController.swift */; };
 		798E848EAF14405498E67CBF /* Pods_TabmanSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA3237E89296F0608E9186A /* Pods_TabmanSample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0B8D7EAD484FA624838C7700 /* Pods-TabmanSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabmanSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TabmanSample/Pods-TabmanSample.debug.xcconfig"; sourceTree = "<group>"; };
+		2B2255251FB4386600F9BCB7 /* ChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
 		2B3AAEAA1FB43616009977F4 /* TabmanSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabmanSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B3AAEAD1FB43616009977F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B3AAEAF1FB43616009977F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		2B3AAEB41FB43616009977F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B3AAEB71FB43616009977F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B3AAEB91FB43616009977F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B76A24D1FB4491C00D9861F /* GrandChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrandChildViewController.swift; sourceTree = "<group>"; };
 		2FA3237E89296F0608E9186A /* Pods_TabmanSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TabmanSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A7235C6828E728F8697B81D /* Pods-TabmanSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabmanSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-TabmanSample/Pods-TabmanSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +71,8 @@
 				2B3AAEB41FB43616009977F4 /* Assets.xcassets */,
 				2B3AAEB61FB43616009977F4 /* LaunchScreen.storyboard */,
 				2B3AAEB91FB43616009977F4 /* Info.plist */,
+				2B2255251FB4386600F9BCB7 /* ChildViewController.swift */,
+				2B76A24D1FB4491C00D9861F /* GrandChildViewController.swift */,
 			);
 			path = TabmanSample;
 			sourceTree = "<group>";
@@ -221,8 +227,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B76A24E1FB4491C00D9861F /* GrandChildViewController.swift in Sources */,
 				2B3AAEB01FB43616009977F4 /* ViewController.swift in Sources */,
 				2B3AAEAE1FB43616009977F4 /* AppDelegate.swift in Sources */,
+				2B2255261FB4386600F9BCB7 /* ChildViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +357,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TabmanSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.anzfactory.TabmanSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -362,6 +371,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TabmanSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.anzfactory.TabmanSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -388,6 +398,7 @@
 				2B3AAEBE1FB43616009977F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
